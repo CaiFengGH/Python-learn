@@ -69,3 +69,23 @@ np.where(arr_3 > 0.5,1,arr_3)
 arr_4 = np.random.randn(5,4)
 arr_4.mean(axis=1)
 
+#排序功能
+arr_5 = np.random.rand(10)
+#排序操作直接改变了arr_5
+arr_5.sort()
+
+#唯一操作
+arr_6 = np.array(['Bob','Joe','Will','Bob','Will','Joe','Joe'])
+np.unique(arr_6)
+arr_7 = np.array([1,2,1,2,1,2,3,4,])
+np.unique(arr_7)
+sorted(set(arr_6))
+#判断是否在列表范围内
+arr_7_1 = np.array([6,0,0,3,2,5,6])
+np.in1d(arr_7_1,[0,3,2])
+
+#随机数的生成
+#产生正态分布的样本值
+arr_8 = np.random.normal(size=(4,4))
+#产生标准正太分布的值
+arr_9 = np.random.randn(2)
