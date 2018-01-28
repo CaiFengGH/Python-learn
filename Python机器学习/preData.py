@@ -1,8 +1,6 @@
-# -*- coding: utf-8 -*-
 """
-Created on Sat Jan 20 13:04:08 2018
 function:数据预处理
-@author: acer
+@author: Ethan
 """
 
 import pandas as pd
@@ -72,7 +70,3 @@ mms = MinMaxScaler()
 from sklearn.preprocessing import StandardScaler
 ss = StandardScaler()
 #两者区别：初始化权重时，标准化学习参数更加容易；标准化对于异常值不太敏感
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
