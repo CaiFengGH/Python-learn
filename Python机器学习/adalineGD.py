@@ -1,8 +1,6 @@
-# -*- coding: utf-8 -*-
 """
-Created on Fri Jan 19 13:50:44 2018
 function:基于梯度下降的优化方法
-@author: acer
+@author: Ethan
 """
 import numpy as np
 
