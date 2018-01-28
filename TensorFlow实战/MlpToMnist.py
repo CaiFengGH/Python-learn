@@ -1,6 +1,6 @@
 """
 function:增加隐藏层识别手写数字
-reference:Tensorflow in action
+referrence:Tensorflow in action
 """
 
 from tensorflow.examples.tutorials.mnist import input_data
