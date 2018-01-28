@@ -1,8 +1,6 @@
-# -*- coding: utf-8 -*-
 """
-Created on Thu Jan 18 22:37:29 2018
 function:perceptron,简单分类器
-@author: acer
+@author: Ethan
 """
 
 import numpy as np
