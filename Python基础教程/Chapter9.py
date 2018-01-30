@@ -71,8 +71,51 @@ class CounterList(list):
         super(CounterList,self).__getitem__(index)                    
     
 #2-属性
+#property函数,可以直接访问和使用
+class Rectangle:
+    def __init__(self):
+        self.width = 0
+        self.height = 0
+    def setSize(self,size):
+        self.width,self.height = size
+    def getSize(self):
+        return self.width,self.height
+    size = property(getSize,setSize)
 
-
+#静态方法和类成员方法
+class MyClass:
+    @staticmethod
+    def smeth():
+        print('This is a static method')
+        
+    @classmethod
+    def cmeth(cls):
+        print('This is a class method of ',cls)
 
 #3-迭代器
+#列表会占用太多内存，使用迭代器更加通用、更简单和更优雅
+class Fibs(object):
+    def __init__(self):
+        self.a = 0
+        self.b = 1
+    def next(self):
+        self.a,self.b = self.b,self.a+self.b
+        return self.a
+    def __iter__(self):
+        return self
+    
+#从迭代器得到序列
+class TestIterator:
+    value = 0
+    def next(self):
+        self.value += 1
+        if self.value > 10:
+            raise StopIteration
+    
+    def __iter__(self):
+        return self
+
+l = TestIterator()
+#此处返回列表1-10
+list(l)    
 
