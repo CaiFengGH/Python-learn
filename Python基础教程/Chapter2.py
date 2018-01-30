@@ -62,7 +62,7 @@ numbers[3:3] = 'haha'
 #此时y为空，x排序
 x = [3,5,4,2]
 y = x.sort()
-#y排序erx未排序
+#y排序而x未排序
 x = [3,5,4,2]
 y = x[:]
 y.sort()
